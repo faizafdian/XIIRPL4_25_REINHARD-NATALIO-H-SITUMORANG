@@ -1,0 +1,12 @@
+# Allow access to PHP files in admin directory
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /Aplikasi%20PO/admin/
+</IfModule>
+
+# Allow all PHP files
+<FilesMatch "\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
